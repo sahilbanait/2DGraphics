@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/title">
+    <fragment
+        android:id="@+id/title"
+        android:name="com.example.a2dgraphics.Title"
+        android:label="title"
+        tools:layout="@layout/title" >
+        <action
+            android:id="@+id/action_title_to_first_Activity"
+            app:destination="@id/first_Activity" />
+        <action
+            android:id="@+id/action_title_to_second_Activity"
+            app:destination="@id/second_Activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/first_Activity"
+        android:name="com.example.a2dgraphics.First_Activity"
+        android:label="first__activity"
+        tools:layout="@layout/first__activity" >
+        <action
+            android:id="@+id/action_first_Activity_to_second_Activity"
+            app:destination="@id/second_Activity" />
+    </fragment>
+    <fragment
+        android:id="@+id/second_Activity"
+        android:name="com.example.a2dgraphics.Second_Activity"
+        android:label="second__activity"
+        tools:layout="@layout/second__activity" />
+    <fragment
+        android:id="@+id/help_menu"
+        android:name="com.example.a2dgraphics.about"
+        android:label="@string/help"
+        tools:layout="@layout/help_menu" />
+</navigation>
