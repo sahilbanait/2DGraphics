@@ -31,8 +31,8 @@
         android:label="second__activity"
         tools:layout="@layout/second__activity" />
     <fragment
-        android:id="@+id/help_menu"
-        android:name="com.example.a2dgraphics.about"
-        android:label="@string/help"
-        tools:layout="@layout/help_menu" />
+        android:id="@+id/help_fragment"
+        android:name="com.example.a2dgraphics.Help"
+        android:label="help"
+        tools:layout="@layout/help" />
 </navigation>

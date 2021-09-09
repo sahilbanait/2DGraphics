@@ -1,6 +1,5 @@
 package com.example.a2dgraphics;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.databinding.DataBindingUtil;
@@ -10,20 +9,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.a2dgraphics.databinding.SecondActivityBinding;
+import com.example.a2dgraphics.databinding.HelpBinding;
 
-public class Second_Activity extends Fragment {
-    private SecondActivityBinding binding;
-    private MyView canvas = null;
-
+public class Help extends Fragment {
+    private HelpBinding binding;
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        binding = DataBindingUtil.inflate(inflater,R.layout.second__activity,container,false);
-
-        return binding.getRoot();
+     binding = DataBindingUtil.inflate(inflater, R.layout.help, container,false);
+     return binding.getRoot();
     }
 }
